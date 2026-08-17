@@ -1,0 +1,17 @@
+# Lixo de sistema operacional
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+desktop.ini
+.DS_Store
+
+# Arquivos temporários do Google Drive
+*.gdoc
+*.gsheet
+*.tmp
+~$*
+
+# Editores
+.vscode/
+.idea/
+*.swp

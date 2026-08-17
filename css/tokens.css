@@ -1,0 +1,27 @@
+:root{
+  --marinho:#0B1B2E;
+  --marinho-md:#16324F;
+  --latao:#C8A34A;
+  /* Latão escurecido para TEXTO PEQUENO sobre fundo claro.
+     O latão puro rende 2.04:1 sobre papel — reprova em WCAG AA.
+     Esta variante rende 5.2:1. Uso exclusivo em texto; os
+     elementos gráficos (régua, ícones, botões) seguem com --latao. */
+  --latao-texto:#7A5E1B;
+  --areia:#E8D6A8;
+  --papel:#EFEDE6;
+  --grafite:#2B2F36;
+  --linha:rgba(11,27,46,.14);
+
+  --font-display:'Fraunces',Georgia,serif;
+  --font-body:'Inter',system-ui,sans-serif;
+  --font-impact:'Archivo',system-ui,sans-serif;
+
+  --radius-control:7px;
+  --radius-card:14px;
+
+  --space-xs:8px;
+  --space-sm:14px;
+  --space-md:22px;
+  --space-lg:34px;
+  --space-xl:76px;
+}

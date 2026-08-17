@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 130" width="480" height="130">
+  <title>Gilson Santos Advocacia - assinatura horizontal</title>
+  <g transform="translate(24 12) scale(0.86)">
+    <path d="M50 4 L50 40 L66 40 L66 64 L50 64 L50 118 C24 112 4 92 4 62 L4 22 Z" fill="#0B1B2E"/>
+    <path d="M50 4 L96 22 L96 62 C96 92 76 112 50 118 L50 64 L66 64 L66 40 L50 40 Z" fill="#C8A34A"/>
+  </g>
+  <text x="132" y="63" font-family="Fraunces, Georgia, serif" font-size="40" font-weight="500" fill="#0B1B2E">Gilson Santos</text>
+  <text x="134" y="90" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#16324F" letter-spacing="4.2">ADVOCACIA TRABALHISTA</text>
+</svg>
