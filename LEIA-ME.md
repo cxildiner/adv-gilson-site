@@ -32,6 +32,11 @@ Está tudo marcado no código. Busque por estes termos:
 | `[Espaço para a trajetória` | seção "O advogado" | Formação e experiência |
 | `TROQUE AQUI PELA FOTO` | 2 comentários no HTML | Fotos do Dr. Gilson |
 | `gilsonsantosadvocacia.com.br` | tag `canonical` + og | Domínio real |
+| `noindex, nofollow` | meta `robots` | **Trocar por `index, follow`** ao publicar de verdade |
+
+> O site está com a indexação **bloqueada** de propósito, porque exibe número
+> de OAB e telefone de exemplo. Só libere o `index, follow` depois que todos
+> os dados reais estiverem no lugar.
 
 ### Fotos
 
