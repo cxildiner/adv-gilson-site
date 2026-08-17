@@ -6,19 +6,18 @@
   'use strict';
 
   /* --------------------------------------------------------
-     1. Destino do CTA
-     Um único lugar para trocar o link do formulário.
-     Todo elemento com [data-cta] recebe esta URL.
-     -------------------------------------------------------- */
-  var FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSctGFj4ePfKqTHPi4UJaU5LEd_X2xmTLdi6V3ftskDKNDGhYA/viewform?usp=header';
+     1. Medição dos CTAs
 
+     O endereço do formulário fica no atributo href de cada botão,
+     dentro do index.html — nunca aqui. Se este script falhar ou
+     demorar, os botões continuam levando ao formulário.
+
+     Aqui só marcamos a origem do clique, para leitura futura em
+     Analytics ou Tag Manager.
+     -------------------------------------------------------- */
   var ctas = document.querySelectorAll('[data-cta]');
 
   Array.prototype.forEach.call(ctas, function (el) {
-    el.setAttribute('href', FORM_URL);
-
-    /* Marca a origem do clique. Serve para leitura futura em
-       Analytics/Tag Manager sem precisar mexer no HTML. */
     el.addEventListener('click', function () {
       var origem = el.getAttribute('data-cta');
 

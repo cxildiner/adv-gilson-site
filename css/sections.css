@@ -662,14 +662,16 @@
 
 /* ----- Revelação ao rolar -------------------------------------------- */
 
-.reveal {
+/* O conteúdo é visível por padrão. Só esconde para animar quando há JS —
+   assim uma falha de script nunca deixa a página em branco. */
+.js .reveal {
   opacity: 0;
   transform: translateY(16px);
   transition: opacity .5s ease, transform .5s ease;
 }
 
-.reveal.is-in { opacity: 1; transform: none; }
+.js .reveal.is-in { opacity: 1; transform: none; }
 
 @media (prefers-reduced-motion: reduce) {
-  .reveal { opacity: 1; transform: none; }
+  .js .reveal { opacity: 1; transform: none; }
 }

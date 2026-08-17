@@ -62,19 +62,24 @@ aparece quando o link é compartilhado no WhatsApp.
 
 ## Trocar o link do formulário
 
-Um lugar só — [js/main.js](js/main.js), primeira constante:
+O endereço fica no `href` de cada botão, dentro do [index.html](index.html) —
+são 6 ocorrências. Use "Localizar e substituir" no editor: procure por
+`docs.google.com/forms` e troque a URL inteira.
 
-```js
-var FORM_URL = 'https://docs.google.com/forms/...';
-```
+O link mora no HTML de propósito, e não numa variável do JavaScript. Se ele
+dependesse de script, uma falha de carregamento deixaria todos os botões do
+site sem destino. Do jeito que está, os CTAs funcionam mesmo sem JavaScript.
 
-Todos os 6 botões da página apontam para lá automaticamente (são os elementos
-com atributo `data-cta`). Não precisa mexer no HTML.
-
-Cada botão já envia a origem do clique (`header`, `hero-primario`, `meio`,
+Cada botão envia a origem do clique (`header`, `hero-primario`, `meio`,
 `final`, `sticky-mobile`, `nav-mobile`) para o `dataLayer` do Google Tag
 Manager ou para o `gtag`, caso você instale um deles depois. Assim dá para
-saber qual CTA converte mais.
+saber qual CTA converte mais. Isso sim fica em [js/main.js](js/main.js).
+
+### Regra ao editar
+
+Nada essencial da página pode depender de JavaScript: nem o texto aparecer,
+nem os botões terem destino. O script serve só para enfeite e medição —
+animação de entrada, menu do celular, acordeão do FAQ e CTA fixo.
 
 ---
 
@@ -148,6 +153,8 @@ publicado pelo escritório, que é vedado.
 - Todas as imagens com `alt`; um único `<h1>`; hierarquia de títulos sem saltos
 - Zero erros de console
 - `prefers-reduced-motion` respeitado (desliga as animações)
+- Página testada **com o JavaScript desligado**: todo o conteúdo permanece
+  visível e os 6 CTAs continuam levando ao formulário
 
 ### Ajuste de marca registrado
 
